@@ -29,7 +29,7 @@ Simulei um processo completo de aquisição de empresa, integrando três frentes
 
 **Decisão:** aquisição viável — condicionada a intervenção operacional e financeira.
 
-🔗 [Ver projeto completo](https://github.com/seu-usuario/fictus)
+🔗 [Ver projeto completo](https://github.com/DataLufi/fictus)
 
 ---
 
