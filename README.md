@@ -51,7 +51,7 @@ Em desenvolvimento. Foco em modelagem preditiva.
 
 ## Contato
 
-[![LinkedIn]www.linkedin.com/in/filholuiz
+www.linkedin.com/in/filholuiz
 
 ---
 
