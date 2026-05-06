@@ -46,6 +46,8 @@ Dashboard público atualizado ao vivo com probabilidades, placares e simulação
 
 **Pergunta central:** quem vai ganhar — e o que os dados dizem sobre isso?
 
+**Progresso atual:** dataset de 48 seleções com índice de força validado → modelo preditivo de Poisson implementado → dashboard Streamlit em construção
+
 **Stack:** coleta via API → modelo de Poisson + Monte Carlo → Streamlit Cloud → GitHub Actions para atualização automática
 
 🔗 [Ver projeto completo](https://github.com/DataLufi/worldcup2026)
