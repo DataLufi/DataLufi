@@ -41,11 +41,12 @@ Simulei um processo completo de aquisição de empresa, integrando três frentes
 ### 🏆 WorldCup2026 — Previsão de Resultados em Tempo Real
 > Pipeline preditivo para a Copa do Mundo FIFA 2026 | Python · Streamlit · GitHub Actions
 
-Pipeline completo de coleta, modelagem e atualização automática de previsões durante a Copa.
-Dashboard público atualizado ao vivo com probabilidades, placares e simulação do torneio.
+**Status: Projeto encerrado — Maio/2026**
 
+O projeto foi descontinuado por decisão estratégica de cronograma: múltiplos problemas de autenticação e rate limit nas APIs de dados de futebol tornaram o pipeline instável dentro do tempo disponível. Os objetivos técnicos deste projeto — Streamlit público, GitHub Actions e modelo preditivo com dado real — foram consolidados no projeto Prisma, que já tinha essas camadas em desenvolvimento ativo.
+
+**Repositório mantido como registro público de decisão técnica.**
 **Pergunta central:** quem vai ganhar — e o que os dados dizem sobre isso?
-
 **Progresso atual:** dataset de 48 seleções com índice de força validado → modelo preditivo de Poisson implementado → dashboard Streamlit em construção
 
 **Stack:** coleta via API → modelo de Poisson + Monte Carlo → Streamlit Cloud → GitHub Actions para atualização automática
