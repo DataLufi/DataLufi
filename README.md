@@ -45,9 +45,9 @@ Simulei um processo completo de aquisição de empresa, integrando três frentes
 
 O projeto foi descontinuado por decisão estratégica de cronograma: múltiplos problemas de autenticação e rate limit nas APIs de dados de futebol tornaram o pipeline instável dentro do tempo disponível. Os objetivos técnicos deste projeto — Streamlit público, GitHub Actions e modelo preditivo com dado real — foram consolidados no projeto Prisma, que já tinha essas camadas em desenvolvimento ativo.
 
-**Repositório mantido como registro público de decisão técnica.**
-**Pergunta central:** quem vai ganhar — e o que os dados dizem sobre isso?
-**Progresso atual:** dataset de 48 seleções com índice de força validado → modelo preditivo de Poisson implementado → dashboard Streamlit em construção
+>**Repositório mantido como registro público de decisão técnica.**
+>**Pergunta central:** quem vai ganhar — e o que os dados dizem sobre isso?
+>**Progresso atual:** dataset de 48 seleções com índice de força validado → modelo preditivo de Poisson implementado → dashboard Streamlit em construção
 
 **Stack:** coleta via API → modelo de Poisson + Monte Carlo → Streamlit Cloud → GitHub Actions para atualização automática
 
