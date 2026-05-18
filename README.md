@@ -38,25 +38,6 @@ Simulei um processo completo de aquisição de empresa, integrando três frentes
 
 ---
 
-### 🏆 WorldCup2026 — Previsão de Resultados em Tempo Real
-> Pipeline preditivo para a Copa do Mundo FIFA 2026 | Python · Streamlit · GitHub Actions
-
-**Status: Projeto encerrado — Maio/2026**
-
-**Repositório mantido como registro público de decisão técnica.**
-
-O projeto foi descontinuado por decisão estratégica de cronograma: múltiplos problemas de autenticação e rate limit nas APIs de dados de futebol tornaram o pipeline instável dentro do tempo disponível. Os objetivos técnicos deste projeto — Streamlit público, GitHub Actions e modelo preditivo com dado real — foram consolidados no projeto Prisma, que já tinha essas camadas em desenvolvimento ativo.
-
-**Pergunta central:** quem vai ganhar — e o que os dados dizem sobre isso?
-
-**Progresso atual:** dataset de 48 seleções com índice de força validado → modelo preditivo de Poisson implementado → dashboard Streamlit em construção
-
-**Stack:** coleta via API → modelo de Poisson + Monte Carlo → Streamlit Cloud → GitHub Actions para atualização automática
-
-🔗 [Ver projeto completo](https://github.com/DataLufi/worldcup2026)
-
----
-
 ### 🔬 Prisma — Investigação de Erosão de Margem
 > Diagnóstico de profit leaks em varejo premium omnichannel | Python · SQL · PostgreSQL · Power BI
 
@@ -70,6 +51,20 @@ A Lufi Data Consulting foi contratada para descobrir — e encontrou 7 profit le
 **Stack completa:** Python → PostgreSQL → Power BI (5 páginas)
 
 🔗 [Acompanhar desenvolvimento](https://github.com/DataLufi/prisma)
+
+---
+
+### 💳 Valore — Modelo de Risco e Estresse de Crédito
+> Análise de carteiras estruturadas com curva de safra e simulação de estresse | Python · PostgreSQL · Power BI · Excel
+> 🚧 Em desenvolvimento — início: Jun/2026
+
+Em carteiras de crédito estruturado, o risco não aparece no momento do calote — ele se acumula nos primeiros 6 a 12 meses de vida de cada safra. A Lufi Data Consulting construiu o modelo que faltava: análise com granularidade mensal por mês de vida de contrato, score de risco por dimensão e simulação de impacto no capital regulatório.
+
+**Pergunta central:** qual safra está destruindo capital silenciosamente — e quanto sobra se o cenário piorar 10 pontos percentuais?
+
+**Stack:** Python (dataset sintético + ETL) → PostgreSQL (window functions + CTEs) → Power BI (curva de safra + DAX) → Excel (modelo de estresse com Power Query) → pytest (reprodutibilidade)
+
+🔗 [Ver repositório](https://github.com/DataLufi/valore)
 
 ---
 
@@ -88,6 +83,25 @@ A Lufi Data Consulting foi contratada pela Meridian RH Consultoria para construi
 
 ---
 
+### 🏆 WorldCup2026 — Previsão de Resultados em Tempo Real
+> Pipeline preditivo para a Copa do Mundo FIFA 2026 | Python · Streamlit · GitHub Actions
+
+**Status: Projeto encerrado — Maio/2026**
+
+**Repositório mantido como registro público de decisão técnica.**
+
+O projeto foi descontinuado por decisão estratégica de cronograma: múltiplos problemas de autenticação e rate limit nas APIs de dados de futebol tornaram o pipeline instável dentro do tempo disponível. Os objetivos técnicos deste projeto — Streamlit público, GitHub Actions e modelo preditivo com dado real — foram consolidados no projeto Prisma, que já tinha essas camadas em desenvolvimento ativo.
+
+**Pergunta central:** quem vai ganhar — e o que os dados dizem sobre isso?
+
+**Progresso atual:** dataset de 48 seleções com índice de força validado → modelo preditivo de Poisson implementado → dashboard Streamlit em construção
+
+**Stack:** coleta via API → modelo de Poisson + Monte Carlo → Streamlit Cloud → GitHub Actions para atualização automática
+
+🔗 [Ver projeto completo](https://github.com/DataLufi/worldcup2026)
+
+
+
 ## Stack
 
 ### Análise & Dados
@@ -96,6 +110,7 @@ A Lufi Data Consulting foi contratada pela Meridian RH Consultoria para construi
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)
 
 ### Visualização
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat)
@@ -109,6 +124,10 @@ A Lufi Data Consulting foi contratada pela Meridian RH Consultoria para construi
 ![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=flat&logo=googlebigquery&logoColor=white)
 ![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat&logo=dbt&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+
+### Modelagem Financeira
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoftexcel&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat&logo=powerbi&logoColor=black)
 
 ---
 
