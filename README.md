@@ -41,30 +41,25 @@ Simulei um processo completo de aquisição de empresa, integrando três frentes
 ### 🔬 Prisma — Investigação de Erosão de Margem
 > Diagnóstico de profit leaks em varejo premium omnichannel | Python · SQL · PostgreSQL · Power BI
 
-A ÍconeLab crescia em receita. A margem encolhia. O board não sabia onde estava o vazamento.
-A Lufi Data Consulting foi contratada para descobrir — e encontrou 7 profit leaks estruturais invisíveis no faturamento bruto.
+Projeto de modelagem dimensional e análise de perdas de margem em varejo multicanais com dados sintéticos gerados em Python. 
 
-**Pergunta central:** onde está destruindo margem sem que ninguém perceba?
+**Pergunta central:** onde a margem está sendo destruida sem que ninguém perceba?
 
-**Progresso atual:** dataset sintético gerado e validado em Python (120k pedidos, 9 tabelas) → banco PostgreSQL estruturado com schema e constraints → análise SQL em andamento
+| Leak | Nome | Mecanismo | Impacto encontrado |
+|---|---|---|---|
+| 1 | Desconto Marketplace | Multiplicador cresce 1.00 → 1.45 (2023→2025) | +R$ 5,2 Mi |
+| 2 | Frete Norte/Nordeste | Base Norte R$72 vs Sudeste R$18 · crescimento +38% | -R$ 1,8 Mi |
+| 3 | Devolução Tech | Taxa base 12% em Tech & Lifestyle · Marketplace amplifica ×1.35 | -R$ 3,1 Mi |
+| 4 | CAC crescente | Eficiência de campanha cai enquanto investimento cresce | +R$ 4,1 Mi |
+| 5 | Estoque parado | Reposição excessiva · capital imobilizado · giro baixo | -R$ 2,9 Mi |
+| 6 | Mix baixa margem | Tech & Lifestyle cresce: 18% → 22% → 26% do mix | +R$ 2,3 Mi |
+| 7 | Retenção | Cohort queda após M2 · abandono silencioso | +R$ 3,7 Mi |
+
+**Impacto potencial total: R$ 23,1 Mi · Quick wins (≤ 45 dias): R$ 8,1 Mi**
 
 **Stack completa:** Python → PostgreSQL → Power BI (5 páginas)
 
-🔗 [Acompanhar desenvolvimento](https://github.com/DataLufi/prisma)
-
----
-
-### 💳 Valore — Modelo de Risco e Estresse de Crédito
-> Análise de carteiras estruturadas com curva de safra e simulação de estresse | Python · PostgreSQL · Power BI · Excel
-> 🚧 Em desenvolvimento — início: Jun/2026
-
-Em carteiras de crédito estruturado, o risco não aparece no momento do calote — ele se acumula nos primeiros 6 a 12 meses de vida de cada safra. A Lufi Data Consulting construiu o modelo que faltava: análise com granularidade mensal por mês de vida de contrato, score de risco por dimensão e simulação de impacto no capital regulatório.
-
-**Pergunta central:** qual safra está destruindo capital silenciosamente — e quanto sobra se o cenário piorar 10 pontos percentuais?
-
-**Stack:** Python (dataset sintético + ETL) → PostgreSQL (window functions + CTEs) → Power BI (curva de safra + DAX) → Excel (modelo de estresse com Power Query) → pytest (reprodutibilidade)
-
-🔗 [Ver repositório](https://github.com/DataLufi/valore)
+🔗 [Ver projeto completo](https://github.com/DataLufi/prisma)
 
 ---
 
@@ -79,7 +74,21 @@ A Lufi Data Consulting foi contratada pela Meridian RH Consultoria para construi
 
 **Stack:** FTP da ANS → BigQuery (raw/staging/marts) → dbt Core → Score Pulso (scikit-learn) → Power BI + Streamlit Cloud → GitHub Actions
 
-🔗 [Ver repositório](https://github.com/DataLufi/pulso)
+🔗 [Ver repositório - em desenvolvimento](https://github.com/DataLufi/pulso)
+
+---
+
+### 💳 Valore — Modelo de Risco e Estresse de Crédito
+> Análise de carteiras estruturadas com curva de safra e simulação de estresse | Python · PostgreSQL · Power BI · Excel
+> 🚧 Em desenvolvimento — início: Jun/2026
+
+Em carteiras de crédito estruturado, o risco não aparece no momento do calote — ele se acumula nos primeiros 6 a 12 meses de vida de cada safra. A Lufi Data Consulting construiu o modelo que faltava: análise com granularidade mensal por mês de vida de contrato, score de risco por dimensão e simulação de impacto no capital regulatório.
+
+**Pergunta central:** qual safra está destruindo capital silenciosamente — e quanto sobra se o cenário piorar 10 pontos percentuais?
+
+**Stack:** Python (dataset sintético + ETL) → PostgreSQL (window functions + CTEs) → Power BI (curva de safra + DAX) → Excel (modelo de estresse com Power Query) → pytest (reprodutibilidade)
+
+🔗 [Ver repositório - em desenvolvimento](https://github.com/DataLufi/valore)
 
 ---
 
